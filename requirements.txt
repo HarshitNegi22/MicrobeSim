@@ -1,6 +1,6 @@
 # Runtime
 numpy>=1.26
-scipy>=1.11
+scipy>=1.18.1
 pandas>=2.1
 pydantic>=2.5
 scikit-learn>=1.4
