@@ -1,7 +1,7 @@
 # Exact direct and test-tool versions from the verified project environment.
 numpy==2.4.6
 scipy==1.17.1
-pandas==3.0.6
+pandas==3.1.1
 pydantic==2.13.5
 scikit-learn==1.9.1
 joblib==1.6.0
