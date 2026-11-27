@@ -9,4 +9,4 @@ streamlit>=1.36
 plotly>=5.18
 openpyxl>=3.1        # Excel ingestion
 matplotlib>=3.8      # static figures for PDF reports
-reportlab>=4.0       # PDF report generation
+reportlab>=5.1.0       # PDF report generation
