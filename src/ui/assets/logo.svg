@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" width="220" height="44" role="img" aria-label="MicrobeSim">
+  <path d="M4 34 C 14 34, 16 32, 20 26 S 28 8, 40 8" fill="none" stroke="#17654B" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="8" cy="34" r="3" fill="#17654B"/>
+  <circle cx="20" cy="26" r="4.2" fill="#17654B"/>
+  <circle cx="40" cy="8" r="5.6" fill="#C4432F"/>
+  <text x="56" y="29" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="600" fill="#16262B">MicrobeSim</text>
+</svg>

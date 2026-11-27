@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+markers = [
+    "needs_combase: needs the locally built, ComBase-derived data/combase_*.csv (not shipped; see data/README.md)",
+    "needs_expanded: needs the locally built, ComBase-derived data/expanded bundle (not shipped; see data/README.md)",
+]

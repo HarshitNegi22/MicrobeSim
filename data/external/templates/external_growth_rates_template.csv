@@ -1,0 +1,1 @@
+record_id,organism,temperature_celsius,ph,water_activity,mu_max_per_h,lag_h,food_category,food_name,source_id,table_ref,n_replicates,assumed,source,rate_sd_log10_per_h,lag_sd_h,max_density_log10,strain_note,evaluation_role

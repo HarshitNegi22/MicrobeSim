@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-tested.txt
+      - name: Install (pinned to the tested versions)
+        run: pip install -r requirements-dev.txt
+      - name: Validate environment matches the tested configuration
+        run: python scripts/validate_environment.py --skip-pretrained
+      - name: Lint (flake8)
+        run: flake8 src scripts tests
+      - name: Format check (black)
+        run: black --check src scripts tests
+      - name: Tests
+        run: python -m pytest -q
+
+  docker:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image (also pretrains the models inside it)
+        run: docker build -t microbesim:ci .
+      - name: Start the container and wait for the health check
+        run: |
+          docker run -d --name ms -p 8501:8501 microbesim:ci
+          for i in $(seq 1 30); do
+            curl -fs http://localhost:8501/_stcore/health && exit 0
+            sleep 2
+          done
+          docker logs ms
+          exit 1

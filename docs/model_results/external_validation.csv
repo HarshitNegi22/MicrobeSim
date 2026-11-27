@@ -1,0 +1,29 @@
+organism,subset,model,n,R2,RMSE,Af,Bf,n_missed
+Listeria monocytogenes,all external rows,baseline: training median,18,-0.8353,0.4192,6.0562,0.2587,0
+Listeria monocytogenes,all external rows,Ratkowsky (mechanistic),18,-0.0477,0.3167,3.4354,0.3238,0
+Listeria monocytogenes,all external rows,Rosso CTM (mechanistic),18,-0.8543,0.4213,3.1843,0.344,4
+Listeria monocytogenes,all external rows,Gaussian Process (ML),18,0.6261,0.1892,4.2636,0.4039,0
+Listeria monocytogenes,all external rows,Random Forest (ML),18,0.5672,0.2036,2.5502,0.5563,0
+Listeria monocytogenes,all external rows,Hybrid: Ratkowsky + Extra Trees,18,-0.056,0.318,3.9965,0.297,0
+Listeria monocytogenes,all external rows,Ensemble (mechanistic + ML),18,0.2954,0.2597,2.8971,0.4116,0
+Listeria monocytogenes,inside ComBase range,baseline: training median,14,-0.6611,0.2258,3.9106,0.3958,0
+Listeria monocytogenes,inside ComBase range,Ratkowsky (mechanistic),14,-0.0316,0.178,3.1843,0.344,0
+Listeria monocytogenes,inside ComBase range,Rosso CTM (mechanistic),14,-0.0316,0.178,3.1843,0.344,0
+Listeria monocytogenes,inside ComBase range,Gaussian Process (ML),14,0.582,0.1133,5.05,0.3594,0
+Listeria monocytogenes,inside ComBase range,Random Forest (ML),14,0.6913,0.0974,2.7411,0.5587,0
+Listeria monocytogenes,inside ComBase range,Hybrid: Ratkowsky + Extra Trees,14,-0.0503,0.1796,3.8574,0.3097,0
+Listeria monocytogenes,inside ComBase range,Ensemble (mechanistic + ML),14,0.3798,0.138,2.9914,0.412,0
+Salmonella spp.,all external rows,baseline: training median,21,-0.0462,0.8545,5.0579,1.7914,0
+Salmonella spp.,all external rows,Ratkowsky (mechanistic),21,-0.4396,1.0024,5.2434,0.2291,0
+Salmonella spp.,all external rows,Rosso CTM (mechanistic),21,-0.4431,1.0036,5.141,0.2444,0
+Salmonella spp.,all external rows,Gaussian Process (ML),21,-0.1911,0.9118,3.2124,0.9099,0
+Salmonella spp.,all external rows,Random Forest (ML),21,-0.2027,0.9162,2.7672,0.545,0
+Salmonella spp.,all external rows,Hybrid: Ratkowsky + Extra Trees,21,-0.4773,1.0154,7.0128,0.17,0
+Salmonella spp.,all external rows,Ensemble (mechanistic + ML),21,-0.3293,0.9633,3.3501,0.4329,0
+Salmonella spp.,inside ComBase range,baseline: training median,7,-0.0062,0.5217,3.2191,1.5251,0
+Salmonella spp.,inside ComBase range,Ratkowsky (mechanistic),7,-0.5218,0.6416,3.4732,0.3692,0
+Salmonella spp.,inside ComBase range,Rosso CTM (mechanistic),7,-0.5676,0.6512,3.7259,0.3795,0
+Salmonella spp.,inside ComBase range,Gaussian Process (ML),7,-0.229,0.5766,2.5741,0.9082,0
+Salmonella spp.,inside ComBase range,Random Forest (ML),7,-0.2884,0.5903,2.4866,0.5883,0
+Salmonella spp.,inside ComBase range,Hybrid: Ratkowsky + Extra Trees,7,-0.546,0.6466,3.5385,0.3551,0
+Salmonella spp.,inside ComBase range,Ensemble (mechanistic + ML),7,-0.3803,0.611,2.6748,0.5421,0

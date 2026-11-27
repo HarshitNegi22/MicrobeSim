@@ -1,0 +1,17 @@
+[server]
+headless = true
+runOnSave = false
+maxUploadSize = 25
+maxMessageSize = 30
+enableCORS = true
+enableXsrfProtection = true
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#00D6C2"
+backgroundColor = "#070A11"
+secondaryBackgroundColor = "#0E1524"
+textColor = "#EEF3FC"

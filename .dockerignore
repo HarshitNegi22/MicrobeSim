@@ -1,0 +1,13 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+tests
+reports_out
+data/analysis_ledger.sqlite3*
+data/pretrained_models
+data/trained_models
+.vscode
+.idea
+.github
+docs

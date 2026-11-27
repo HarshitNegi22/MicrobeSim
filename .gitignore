@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Generated output
+reports_out/
+
+# Runtime state: accounts, password hashes, saved runs, audit log. NEVER commit.
+data/analysis_ledger.sqlite3
+data/analysis_ledger.sqlite3-shm
+data/analysis_ledger.sqlite3-wal
+*.backup.sqlite3
+data/trained_models/
+
+# Secrets (SSO etc.)
+.streamlit/secrets.toml
+
+# Trained models: large, tied to exact library versions, and (pickle) not safe to share.
+# Rebuild locally with: python scripts/pretrain_models.py
+data/pretrained_models/
+
+# ComBase-derived data: licensed, not redistributable by this project (see data/README.md).
+# Build it locally from your own ComBase exports; it is picked up automatically.
+data/combase_growth_dataset.csv
+data/combase_kinetic_curves.csv
+data/combase_dynamic_profiles.csv
+data/combase_load_report.csv
+data/suspect_records.csv
+data/expanded/
+data/combase_exports/

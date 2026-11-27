@@ -1,0 +1,34 @@
+﻿column,type,meaning
+observation_id,id,"MSOBS###### (real, unchanged) or SYNOBS###### (synthetic)"
+curve_id,id,organism-slug + record_id; one curve = one experiment at fixed T/pH/aw. Use for grouped splitting
+record_id,id,ComBase Record ID (real) or SYN_<organism>_##### (synthetic)
+organism,clean,Harmonised to the project's names (src/datasets.py ORGANISMS)
+organism_source_label,provenance,Original label in the ComBase export
+data_origin / is_synthetic,NEW,real_combase vs synthetic_calibrated; boolean flag. ALWAYS filter/stratify on this
+synthetic_donor_curve_id,NEW,"Real curve a synthetic curve was modelled on (design, shape, noise). Blank for real"
+food_category / food_name,clean,food_name lower-cased and whitespace-normalised
+"temperature_celsius, ph, water_activity",clean,Renamed to project column names; aw<0.5 -> NaN
+temperature_band,NEW,frozen / refrigeration / abuse-cool / ambient-warm / thermal
+ph_class,NEW,acidic (<4.6) vs low-acid (>=4.6)
+aw_class,NEW,low (<0.85) / intermediate (0.85-0.92) / high (>0.92)
+time_hours,clean,Time of the measurement
+log10_count,clean,"log10 CFU, with the -0.01 'not detected' sentinel set to NaN"
+log10_count_source_value,provenance,Exact value from the source export (incl. -0.01 sentinel)
+below_detection_limit,NEW,True where the source value was the -0.01 sentinel
+log10_change_from_initial,NEW,log10_count minus the curve's initial count (mean at earliest time)
+ln_change_from_initial,NEW,"Same in natural-log units; y = ln(N/N0), the scale the project's primary models fit"
+nacl_pct,NEW,Parsed from conditions_notes ('Sodium chloride in the environment: x(%)')
+assumed_ph/aw/temperature/initial_count,NEW,"Parsed from ComBase 'Assumed' field: value estimated, not measured"
+metadata_complete,NEW,"Temperature, pH and aw all present"
+curve_behavior,NEW,growth / decline / flat / single_time (replicates at one instant) / no_valid_counts
+"curve_n_points, curve_duration_h, curve_log10_initial",NEW,Per-curve summary joined to each row
+"curve_mu_max_per_h, curve_lag_h, curve_fit_r2",NEW,"Gompertz fit (project's src.models.primary), natural-log units, growth curves only"
+curve_growth_fit_ok,NEW,"Fit passed the project's rules: mu>1.5e-3, R2>=0.8, relative SE of mu<=50%"
+curve_slope_log10_per_h,NEW,Linear slope of log10 count vs time (useful for decline curves)
+usable_for_primary_fit,NEW,Row belongs to an accepted growth fit and has a valid count
+usable_for_secondary_model,NEW,Curve has an accepted fit AND complete T/pH/aw
+include_for_modeling,NEW,Valid count + complete metadata + not a single-time/empty curve
+split,NEW,train/validation/test (70/15/15) assigned PER CURVE within organism. Synthetic inherits its donor's split (no leakage)
+qc_flags,NEW,"Semicolon list: below_detection_sentinel, aw_implausible_removed, count_gt_10_log, *_missing, condition_assumed_by_combase, single_time_point_curve; 'ok' if none"
+"note_* , conditions_notes",clean,"Parsed flags (cut/minced, raw, shaken, mixed inoculation) + original text"
+"source_file, duplicate_export_occurrences",provenance,ComBase export file(s); 'SYNTHETIC' for synthetic rows

@@ -1,0 +1,91 @@
+version,organism,model,n,R2,RMSE,Af,Bf
+"before (original code, trained on all rows)",Bacillus cereus,Ratkowsky,181,0.1336,0.4555,1.8512,0.9099
+"before (original code, trained on all rows)",Bacillus cereus,Rosso CTM,181,-0.2527,0.55,2.6909,1.1181
+"before (original code, trained on all rows)",Bacillus cereus,Gaussian Process,181,-0.1388,0.5244,2.4477,0.9375
+"before (original code, trained on all rows)",Bacillus cereus,Random Forest,181,0.0414,0.4794,2.2429,0.8856
+"before (original code, trained on all rows)",Clostridium botulinum (non-proteolytic),Ratkowsky,71,0.7799,0.1221,2.888,0.6586
+"before (original code, trained on all rows)",Clostridium botulinum (non-proteolytic),Rosso CTM,71,0.2498,0.2258,2.9175,0.6597
+"before (original code, trained on all rows)",Clostridium botulinum (non-proteolytic),Gaussian Process,71,0.3607,0.2066,2.0279,0.665
+"before (original code, trained on all rows)",Clostridium botulinum (non-proteolytic),Random Forest,71,0.3997,0.202,1.7342,0.8005
+"before (original code, trained on all rows)",Clostridium botulinum (proteolytic),Ratkowsky,93,0.4512,0.3178,1.6083,1.0252
+"before (original code, trained on all rows)",Clostridium botulinum (proteolytic),Rosso CTM,93,0.4543,0.317,1.6158,1.0251
+"before (original code, trained on all rows)",Clostridium botulinum (proteolytic),Gaussian Process,93,-0.05,0.4404,2.6453,0.9976
+"before (original code, trained on all rows)",Clostridium botulinum (proteolytic),Random Forest,93,0.317,0.355,1.76,0.9984
+"before (original code, trained on all rows)",Clostridium perfringens,Ratkowsky,103,0.5138,0.8046,1.7345,1.0274
+"before (original code, trained on all rows)",Clostridium perfringens,Rosso CTM,103,-0.8987,1.5917,1.6733,1.02
+"before (original code, trained on all rows)",Clostridium perfringens,Gaussian Process,103,-0.1686,1.2488,2.3555,0.9824
+"before (original code, trained on all rows)",Clostridium perfringens,Random Forest,103,0.536,0.7869,1.6149,1.0515
+"before (original code, trained on all rows)",Escherichia coli,Ratkowsky,164,0.1942,0.6098,2.4158,0.6804
+"before (original code, trained on all rows)",Escherichia coli,Rosso CTM,164,0.0428,0.6646,2.5108,0.6648
+"before (original code, trained on all rows)",Escherichia coli,Gaussian Process,164,0.1296,0.6324,2.7796,0.7148
+"before (original code, trained on all rows)",Escherichia coli,Random Forest,164,0.7728,0.3249,1.4534,0.9536
+"before (original code, trained on all rows)",Listeria monocytogenes,Ratkowsky,83,0.9772,0.0463,1.4132,0.8846
+"before (original code, trained on all rows)",Listeria monocytogenes,Rosso CTM,83,0.8647,0.1132,1.4171,0.8867
+"before (original code, trained on all rows)",Listeria monocytogenes,Gaussian Process,83,0.9714,0.0519,1.5108,0.8452
+"before (original code, trained on all rows)",Listeria monocytogenes,Random Forest,83,0.9555,0.0648,1.6598,0.7662
+"before (original code, trained on all rows)",Salmonella spp.,Ratkowsky,24,0.3821,0.2527,1.3359,1.0937
+"before (original code, trained on all rows)",Salmonella spp.,Rosso CTM,24,0.0666,0.3103,1.2918,1.0554
+"before (original code, trained on all rows)",Salmonella spp.,Gaussian Process,24,0.1094,0.3035,1.5564,1.0506
+"before (original code, trained on all rows)",Salmonella spp.,Random Forest,24,0.0311,0.3161,1.5652,1.0904
+"before (original code, trained on all rows)",Staphylococcus aureus,Ratkowsky,135,0.4522,0.3141,3.3008,0.5899
+"before (original code, trained on all rows)",Staphylococcus aureus,Rosso CTM,135,0.0787,0.4082,3.3108,0.5969
+"before (original code, trained on all rows)",Staphylococcus aureus,Gaussian Process,135,0.0924,0.4049,2.3394,0.832
+"before (original code, trained on all rows)",Staphylococcus aureus,Random Forest,135,0.5088,0.298,2.0303,0.8108
+"before (original code, trained on all rows)",Yersinia enterocolitica,Ratkowsky,162,0.0668,0.1742,1.6759,1.0132
+"before (original code, trained on all rows)",Yersinia enterocolitica,Rosso CTM,162,0.0623,0.1746,1.6702,1.026
+"before (original code, trained on all rows)",Yersinia enterocolitica,Gaussian Process,162,0.0798,0.1729,1.7695,0.9311
+"before (original code, trained on all rows)",Yersinia enterocolitica,Random Forest,162,0.2951,0.1515,1.6282,0.9634
+"after (this update, suspect rows set aside)",Bacillus cereus,Ratkowsky,181,0.3693,0.387,1.7796,1.0265
+"after (this update, suspect rows set aside)",Bacillus cereus,Rosso CTM,181,0.0284,0.4834,2.7449,1.0322
+"after (this update, suspect rows set aside)",Bacillus cereus,Gaussian Process,181,0.0353,0.4829,2.261,0.9726
+"after (this update, suspect rows set aside)",Bacillus cereus,Random Forest,181,0.1334,0.4541,2.1376,0.9568
+"after (this update, suspect rows set aside)",Bacillus cereus,Hybrid (Ratkowsky + Extra Trees),181,0.3138,0.4016,2.0804,1.0856
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Ratkowsky,71,0.7799,0.1221,2.888,0.6586
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Rosso CTM,71,0.2498,0.2258,2.9175,0.6597
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Gaussian Process,71,0.6653,0.1508,1.8303,0.7215
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Random Forest,71,0.582,0.1685,1.6664,0.7364
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Hybrid (Ratkowsky + Extra Trees),71,0.789,0.1197,1.8374,0.7243
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Ratkowsky,93,0.4512,0.3178,1.6083,1.0252
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Rosso CTM,93,0.4543,0.317,1.6158,1.0251
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Gaussian Process,93,0.407,0.3307,1.6433,1.0301
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Random Forest,93,0.2911,0.3617,1.7888,0.9855
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Hybrid (Ratkowsky + Extra Trees),93,0.4616,0.315,1.591,1.0073
+"after (this update, suspect rows set aside)",Clostridium perfringens,Ratkowsky,103,0.5138,0.8046,1.7345,1.0274
+"after (this update, suspect rows set aside)",Clostridium perfringens,Rosso CTM,103,0.4757,0.8352,1.6041,1.0704
+"after (this update, suspect rows set aside)",Clostridium perfringens,Gaussian Process,103,0.5374,0.7857,1.5798,1.0057
+"after (this update, suspect rows set aside)",Clostridium perfringens,Random Forest,103,0.5011,0.8159,1.6579,1.0787
+"after (this update, suspect rows set aside)",Clostridium perfringens,Hybrid (Ratkowsky + Extra Trees),103,0.3637,0.9207,1.9166,1.0681
+"after (this update, suspect rows set aside)",Escherichia coli,Ratkowsky,104,0.7183,0.3618,1.7098,0.9432
+"after (this update, suspect rows set aside)",Escherichia coli,Rosso CTM,104,0.8316,0.2797,1.663,0.9186
+"after (this update, suspect rows set aside)",Escherichia coli,Gaussian Process,104,0.8043,0.3016,1.5433,0.9574
+"after (this update, suspect rows set aside)",Escherichia coli,Random Forest,104,0.738,0.3489,1.4903,0.9917
+"after (this update, suspect rows set aside)",Escherichia coli,Hybrid (Ratkowsky + Extra Trees),104,0.7182,0.3618,1.8955,0.9019
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Ratkowsky,83,0.9772,0.0463,1.4132,0.8846
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Rosso CTM,83,0.8372,0.1234,1.4192,0.8859
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Gaussian Process,83,0.9729,0.0504,1.5163,0.857
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Random Forest,83,0.956,0.0645,1.532,0.7952
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Hybrid (Ratkowsky + Extra Trees),83,0.9814,0.0418,1.3877,0.8625
+"after (this update, suspect rows set aside)",Salmonella spp.,Ratkowsky,24,0.3821,0.2527,1.3359,1.0937
+"after (this update, suspect rows set aside)",Salmonella spp.,Rosso CTM,24,0.0666,0.3103,1.2918,1.0554
+"after (this update, suspect rows set aside)",Salmonella spp.,Gaussian Process,24,0.375,0.2526,1.3826,1.0897
+"after (this update, suspect rows set aside)",Salmonella spp.,Random Forest,24,0.0229,0.318,1.5531,1.1414
+"after (this update, suspect rows set aside)",Salmonella spp.,Hybrid (Ratkowsky + Extra Trees),24,0.2081,0.286,1.3672,1.1247
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Ratkowsky,135,0.325,0.3494,2.1657,0.7921
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Rosso CTM,135,0.0427,0.4161,2.1103,0.8162
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Gaussian Process,135,0.1782,0.3855,2.1986,0.8001
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Random Forest,135,0.6223,0.2613,1.7544,0.8914
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Hybrid (Ratkowsky + Extra Trees),135,0.7188,0.2255,1.8056,0.8359
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Ratkowsky,162,0.2646,0.1527,1.6598,1.0274
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Rosso CTM,162,0.2584,0.1536,1.6561,1.0415
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Gaussian Process,162,0.1478,0.1658,1.6619,1.0976
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Random Forest,162,0.5292,0.1206,1.6002,0.9851
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Hybrid (Ratkowsky + Extra Trees),162,0.2186,0.1576,1.653,1.0533
+"after (this update, suspect rows set aside)",Bacillus cereus,Ensemble (mechanistic + ML),181,0.2923,0.4105,1.9585,1.0269
+"after (this update, suspect rows set aside)",Clostridium botulinum (non-proteolytic),Ensemble (mechanistic + ML),71,0.7376,0.1335,1.7189,0.7313
+"after (this update, suspect rows set aside)",Clostridium botulinum (proteolytic),Ensemble (mechanistic + ML),93,0.4367,0.3221,1.5989,1.0217
+"after (this update, suspect rows set aside)",Clostridium perfringens,Ensemble (mechanistic + ML),103,0.5407,0.7829,1.5967,1.0587
+"after (this update, suspect rows set aside)",Escherichia coli,Ensemble (mechanistic + ML),104,0.7776,0.3215,1.4715,0.9632
+"after (this update, suspect rows set aside)",Listeria monocytogenes,Ensemble (mechanistic + ML),83,0.9761,0.0475,1.41,0.8541
+"after (this update, suspect rows set aside)",Salmonella spp.,Ensemble (mechanistic + ML),24,0.3818,0.2525,1.3709,1.1185
+"after (this update, suspect rows set aside)",Staphylococcus aureus,Ensemble (mechanistic + ML),135,0.4855,0.305,1.7122,0.8593
+"after (this update, suspect rows set aside)",Yersinia enterocolitica,Ensemble (mechanistic + ML),162,0.3637,0.1417,1.5962,1.0472
